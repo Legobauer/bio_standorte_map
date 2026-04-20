@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<script>
-if (window.top === window.self) {
-    document.body.innerHTML = "<h2>Kein direkter Zugriff erlaubt.</h2>";
-}
-</script>
+
 <html>
 <head>
     
@@ -63,7 +59,9 @@ if (window.top === window.self) {
         
 </body>
 <script>
-    
+if (window.top === window.self) {
+    document.body.innerHTML = "<h2>Kein direkter Zugriff erlaubt.</h2>";
+}
     
             var map_b0053d613c26bd496b700a6d4ca79094 = L.map(
                 "map_b0053d613c26bd496b700a6d4ca79094",
